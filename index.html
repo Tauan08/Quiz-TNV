@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Computação em Nuvem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-options">
+        <label for="order">Ordem das Perguntas:</label>
+        <select id="order">
+            <option value="normal" selected>Normal</option>
+            <option value="random">Aleatória</option>
+        </select>
+    </div>
+    <div class="quiz-container">
+        <h1>Quiz de Computação em Nuvem</h1>
+        <div id="question-container">
+            <div id="question"></div>
+            <div id="options"></div>
+        </div>
+        <div class="navigation-buttons">
+            <button id="prev-button" disabled>Anterior</button>
+            <button id="next-button" disabled>Próxima Pergunta</button>
+        </div>
+        <div id="results-container" style="display: none;">
+            <h2>Seus Resultados</h2>
+            <p id="score"></p>
+            <button id="restart-button">Recomeçar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

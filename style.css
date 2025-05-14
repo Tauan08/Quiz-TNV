@@ -1,0 +1,174 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.quiz-options {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.quiz-options label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.quiz-options select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#question-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#question {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+    cursor: pointer;
+    background-color: #eee;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+#options button:hover {
+    background-color: #ddd;
+}
+
+#options button.correct {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+#options button.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: space-between; /* Para colocar os botões nas extremidades */
+}
+
+.navigation-buttons button {
+    background-color: #6c757d; /* Cor um pouco diferente para distinguir */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+    background-color: #545b62;
+}
+
+.navigation-buttons button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#next-button, #restart-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+#next-button:hover, #restart-button:hover {
+    background-color: #0056b3;
+}
+
+#results-container {
+    text-align: center;
+}
+
+#results-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#results-container p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.review-item {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.review-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review-item p {
+    margin-bottom: 5px;
+}
+
+.correct-text {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect-text {
+    color: red;
+    font-weight: bold;
+}

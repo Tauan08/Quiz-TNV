@@ -1,0 +1,102 @@
+[
+    {
+        "question": "De acordo com o PDF, qual o propósito principal do estudo da segurança em computação em nuvem?",
+        "options": [
+            "Compreender apenas os aspectos técnicos da segurança em nuvem.",
+            "Proporcionar ao estudante a compreensão da importância da segurança no provimento dos serviços em nuvem e suas principais formas de manutenção.",
+            "Descrever apenas os modelos de serviço e implantação da computação em nuvem.",
+            "Enfatizar somente os riscos associados à computação em nuvem."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Quais são os três modelos de serviço de nuvem destacados no PDF?",
+        "options": [
+            "Nuvem privada, nuvem pública, nuvem híbrida.",
+            "Software as a Service (SaaS), Platform as a Service (PaaS), Infrastructure as a Service (IaaS).",
+            "On-demand self-service, broad network access, resource pooling.",
+            "Measured service, rapid elasticity, on-demand self-service."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Qual característica da computação em nuvem permite que uma empresa aumente ou diminua a quantidade de recursos de computação de acordo com suas necessidades?",
+        "options": [
+            "On-demand self-service",
+            "Broad network access",
+            "Resource pooling",
+            "Rapid elasticity"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "O que significa \"Measured Service\" no contexto da computação em nuvem?",
+        "options": [
+            "O serviço é gratuito para todos os usuários.",
+            "A empresa paga apenas pelos recursos consumidos.",
+            "O serviço é ilimitado e sem restrições de uso.",
+            "O serviço é medido em termos de tempo de uso."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Quais são as três grandes empresas que se destacam no provimento de serviços em nuvem em grande escala, de acordo com o PDF?",
+        "options": [
+            "Google, Apple e Microsoft.",
+            "Amazon Web Service (AWS), Microsoft Azure e Google Cloud Platform (GCP).",
+            "IBM, Oracle e Salesforce.",
+            "Alibaba Cloud, Tencent Cloud e Huawei Cloud."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "De acordo com o PDF, qual o modelo de serviço de nuvem que permite ao cliente selecionar o tamanho da máquina virtual, escolher sistemas operacionais previamente configurados e implantar softwares aplicativos?",
+        "options": [
+            "SaaS",
+            "PaaS",
+            "IaaS",
+            "Nenhum dos modelos acima"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Qual das seguintes opções NÃO é uma ameaça à segurança de armazenamento em nuvem, de acordo com o PDF?",
+        "options": [
+            "Acesso não autorizado",
+            "Vazamento de dados",
+            "Atualizações de software",
+            "Perda de dados"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "O que é a Cloud Security Alliance (CSA)?",
+        "options": [
+            "Uma empresa que fornece serviços de computação em nuvem.",
+            "Uma organização líder em escala global dedicada a definir e fomentar conscientização sobre as melhores práticas de segurança em ambientes de computação em nuvem.",
+            "Um órgão governamental que regulamenta a segurança em nuvem.",
+            "Uma organização sem fins lucrativos que promove o uso de software livre."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Quais são os três princípios fundamentais da segurança da informação, conforme o PDF?",
+        "options": [
+            "Clareza, integridade e intratabilidade.",
+            "Retratabilidade, confiabilidade e disponibilidade.",
+            "Confidencialidade, integridade e disponibilidade.",
+            "Confidencialidade, transparência e clareza."
+        ],
+        "answer": 2
+    },
+    {
+        "question": "De acordo com as orientações da CSA, quais conceitos compõem a multilocação?",
+        "options": [
+            "Abstração e orquestração.",
+            "Abstração e segregação.",
+            "Segregação e isolamento.",
+            "Orquestração e isolamento."
+        ],
+        "answer": 1
+    }
+]
