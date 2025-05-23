@@ -8,7 +8,7 @@
             "O usuário é responsável pela segurança da infraestrutura física (hardware) e a aplicação é de responsabilidade mista entre Google e usuário.",
             "A responsabilidade de gerenciamento da VM é mista. Toda infraestrutura física é provida e gerenciada pelo usuário, mas o gerenciamento de utilização dos recursos, instalação e atualizações de softwares é de responsabilidade única do Google."
         ],
-        "answer": 1
+        "answer": 0
     },
     {
         "question": "A segurança é um aspecto fundamental nas aplicações. Qual o nome da solução do Google que inibe acessos de bots a sistemas utilizando identificações visuais ou auditivas?",
@@ -41,7 +41,7 @@
             "V; V; F; V.",
             "F; V; V; F."
         ],
-        "answer": 0
+        "answer": 3
     },
     {
         "question": "Sobre as aplicações nativas da nuvem marque verdadeiro (V) ou falso (F) nas afirmativas abaixo.  (  ) Uma aplicação nativa da nuvem consiste em uma aplicação na qual utiliza recursos como serviço e é desacoplada, ou seja, na qual seus componentes não dependem de outros componentes externos, é independente.  (  ) Possui duas arquiteturas comuns e amplamente utilizadas, sendo denominadas de  ¿com estado¿ (Stateful) e  'sem estado' (Stateless).  (  ) Não devem ser considerados o ambiente no qual a aplicação será implementado.  (  ) No ambiente de nuvem, é cobrado por recursos consumidos, então como necessidade, devemos adequar nossas aplicações para consumir o mínimo de CPU e memória possível, mas ao mesmo tempo se manter estável, por isso se deve a  importância dessa arquitetura de Aplicativo Nativo da Nuvem.",
@@ -52,7 +52,7 @@
             "V; V; F; V.",
             "F; V; V; V."
         ],
-        "answer": 0
+        "answer": 3
     },
     {
         "question": "Na construção e desenvolvimento de uma aplicação, muitas vezes depende-se de comunicação entre sistemas, podendo assim, em algum momento, um desses sistemas ficar indisponível. Pensando na experiência do usuário, onde devemos evitar esperas, podemos utilizar uma estratégia de entrega de mensagens para esses casos de indisponibilidade. Qual o nome desse processo?",
@@ -107,6 +107,6 @@
             "V; V; F; V.",
             "F; V; V; V."
         ],
-        "answer": 0
+        "answer": 4
     }
 ]
