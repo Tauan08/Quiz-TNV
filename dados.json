@@ -1,112 +1,112 @@
 [
     {
-        "question": "Segurança é um dos pilares das boas práticas da AWS e, por isso, ela oferece vários mecanismos para manter o uso da nuvem da forma mais segura possível. Nesse contexto, o par de chaves no EC2 serve para:",
+        "question": "No contexto do Google, de quem é a responsabilidade do gerenciamento da VM?",
         "options": [
-            "Descriptografar o disco EBS.",
-            "Descriptografar AMIs que foram criptografadas.",
-            "Fazer a transferência segura entre instâncias EC2s diferentes.",
-            "Habilitar SSL na instância EC2.",
-            "Descriptografar a senha de administrador da instância Windows e conectar remotamente usando SSH no Linux."
+            "A responsabilidade é mista. A infraestrutura física (hardware) é gerenciada e suportada pelo Google, e o gerenciamento de utilização de recursos, instalação e atualizações de software, é responsabilidade do usuário.",
+            "É apenas responsabilidade do Google fazer o gerenciamento de utilização dos recursos, instalação e atualizações de softwares.",
+            "Toda infraestrutura física é provida e gerenciada somente pelo usuário.",
+            "O usuário é responsável pela segurança da infraestrutura física (hardware) e a aplicação é de responsabilidade mista entre Google e usuário.",
+            "A responsabilidade de gerenciamento da VM é mista. Toda infraestrutura física é provida e gerenciada pelo usuário, mas o gerenciamento de utilização dos recursos, instalação e atualizações de softwares é de responsabilidade única do Google."
         ],
-        "answer": 4
+        "answer": 1
     },
     {
-        "question": "As classes de armazenamento do Amazon S3 disponibilizam opções que se adequam aos mais diversos cenários, dos que precisam de mais performance até os que necessitam do melhor custo. Qual sentença define melhor o Glacier Deep Archive?",
+        "question": "A segurança é um aspecto fundamental nas aplicações. Qual o nome da solução do Google que inibe acessos de bots a sistemas utilizando identificações visuais ou auditivas?",
         "options": [
-            "Classe de armazenamento mais acessível do Amazon S3 e oferece suporte à retenção e preservação digital de longo prazo para dados que podem ser acessados uma ou duas vezes por ano.",
-            "Oferece um armazenamento de objetos com altos níveis de resiliência, disponibilidade e performance para dados acessados com frequência.",
-            "É indicado para dados acessados com menos frequência, mas que exigem acesso rápido quando necessários.",
-            "Classe de armazenamento de arquivos que oferece o armazenamento de custo mais baixo para dados de longa duração, que raramente são acessados e exigem recuperação em milissegundos.",
-            "Armazenamento em nuvem que reduz automaticamente os custos de armazenamento em um nível de objeto granular, movendo automaticamente os dados para o nível de acesso mais econômico com base na frequência de acesso, sem impacto sobre a performance, taxas de recuperação ou sobrecarga operacional."
+            "reCAPTCHA.",
+            "Cloud Security.",
+            "Bot Detector.",
+            "Google Cloud Bot Identity.",
+            "Google reBOT."
         ],
         "answer": 0
     },
     {
-        "question": "A AWS possui um portfólio de tipos de instância EC2 para os mais variados propósitos, priorizando uma determinada característica que pode ser útil a aplicação que irá utilizá-la. São tipos de instâncias otimizados para computação:",
+        "question": "Um usuário sofreu um ataque devido a uma biblioteca customizada desatualizada em sua aplicação. Esse usuário utilizava uma plataforma IaaS no Google Cloud. De quem é a principal responsabilidade sobre a aplicação neste caso?",
         "options": [
-            "m6i, m6g, r6g.",
-            "t3a, r5a, m5a.",
-            "c6g, c5a, c4.",
-            "t4g, m6i, m4.",
-            "r5, r6g, r4."
+            "Do Google, responsável pela IaaS.",
+            "Mista, do Google e do Usuário que compartilham a responsabilidade sobre a aplicação.",
+            "Do usuário, pois em uma IaaS ele é responsável pela aplicação.",
+            "Parcialmente do usuário.",
+            "De ninguém."
         ],
         "answer": 2
     },
     {
-        "question": "O EBS possui duas principais divisões, os discos SSD e os HDD, que atendem as mais variadas demandas de armazenamento na nuvem. No contexto da escolha para sua carga de trabalho, o io1 é um tipo de EBS recomendado para o seguinte caso de uso:",
+        "question": "Com a chegada da computação em nuvem, surgiram soluções como serviço, como a infraestrutura como serviço (Infrastructure as a Service em inglês, chamada de IaaS) e a plataforma como serviço (Platform as a Service em inglês, chamada de PaaS). Nesse sentido, classifique como verdadeiro ou falso as afirmativas abaixo: ( ) Enquanto na IaaS ainda existe uma responsabilidade do ponto de vista de sistema operacional e dados, por exemplo, na PaaS isso é desnecessário, visto que tudo isso é provido sob demanda. ( ) A IaaS é o modelo que oferece infraestrutura sob demanda, como recursos computacionais, armazenamento, rede e virtualização. Esse modelo ajuda a eliminar grande parte da complexidade e custos associados à criação e manutenção de infraestrutura física de um data center. ( ) Utilizando IaaS do Google Cloud, o cliente não tem a responsabilidade de gerenciar a camada de sistema operacional, dados e aplicação. ( ) A PaaS (plataforma como serviço) é um modelo que engloba a IaaS, porém com uma camada de abstração maior, tirando toda responsabilidade do ponto de vista de operações e infraestrutura, ou seja, o usuário não precisa se preocupar com nada além da sua aplicação. Assinale a alternativa que apresenta a sequência correta de cima para baixo.",
         "options": [
-            "Volumes de boot, aplicativos interativos de baixa latência, desenvolvimento e teste.",
-            "NoSQL com uso intensivo de I/O e bancos de dados relacionais.",
-            "Big data, data warehouses, processamento de logs.",
-            "Dados mais frios que exigem menos varreduras por dia.",
-            "Backups e armazenamento de longo prazo."
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Uma preocupação sobre armazenamento no EBS reside sobre as cópias de segurança que o usuário pode ter disponível, em caso de falha humana ou de sistema, permitindo a sua posterior recuperação. O snapshot é o recurso que permite salvar, de forma distribuída e com alta disponibilidade, uma cópia exata do disco EBS. Sobre snapshots de EBS, marque a alternativa correta:",
-        "options": [
-            "São armazenados em uma zona de disponibilidade, que corresponde a mesma do disco EBS original.",
-            "O primeiro snapshot feito de um EBS copia todo volume, os subsequentes apenas os dados incrementais.",
-            "O usuário precisa transferir o snapshot para um bucket do Amazon S3 para garantir a durabilidade.",
-            "A recuperação dos snapshots é feita no console/painel do Amazon S3, a partir dos buckets de backups.",
-            "Snapshots só podem ser recuperados para a mesma zona de disponibilidade do EBS o qual foi originado."
-        ],
-        "answer": 1
-    },
-    {
-        "question": "Dentro da VPC, a AWS oferece recursos tanto para endereçamento privado quanto para endereçamento público, permitindo adequar o nível de privacidade que se precisa na nuvem. Nesse sentido, qual sentença melhor define IPs elásticos?",
-        "options": [
-            "Endereço privado que pode ser movido, quando desejar, entre instâncias.",
-            "Endereço IPv6 público que pode ser associado a várias instâncias simultaneamente.",
-            "Endereço IPv4 público que pode ser associado a várias instâncias simultaneamente.",
-            "Endereço IPv4 público que pode ser movido, quando desejar, entre instâncias.",
-            "Endereço IPv6 público que pode ser movido, quando desejar, entre instâncias."
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Para reduzir os índices de carbono, a Amazon desenvolveu os processadores Graviton que chegam a usar 60% menos energia para oferecer a mesma performance do que as instâncias do EC2 similares. Qual dos tipos de instância EC2 abaixo, possui processadores Graviton?",
-        "options": [
-            "c5",
-            "m4",
-            "m6i",
-            "t4g",
-            "t3 s"
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Além do enorme poder de armazenamento, o Amazon S3 permite que seus buckets sejam utilizados para gerar versões dos arquivos armazenados, preservando os arquivos de serem sobrescritos de forma indesejada ou por falta de atenção. Sobre objetos versionados no Amazon S3, marque a alternativa correta.",
-        "options": [
-            "Excluir um objeto não o remove permanentemente e se você substituir o objeto, usando o mesmo nome, ainda terá acesso às versões anteriores.",
-            "Excluir um objeto o remove permanentemente e se você substituir o objeto, usando o mesmo nome, ainda terá acesso às versões anteriores.",
-            "Excluir um objeto o remove permanentemente e se você substituir o objeto, usando o mesmo nome, não terá mais acesso à versão anterior.",
-            "Excluir um objeto não o remove permanentemente e se você substituir o objeto, usando o mesmo nome, não terá mais acesso à versão anterior.",
-            "Excluir objetos não é possível, sendo necessário desabilitar o versionamento."
+            "F; V; F; V.",
+            "V; V; V; F.",
+            "F; F; V; F.",
+            "V; V; F; V.",
+            "F; V; V; F."
         ],
         "answer": 0
     },
     {
-        "question": "Na AWS, a privacidade está no controle do usuário, permitindo ter ambientes restritos de acesso. Dentro de uma VPC isso pode ser feito com subnets públicas e privadas. Uma subnet de VPC para ser privada, mas ainda manter o acesso à internet, precisa ter rota para o seguinte recurso:",
+        "question": "Sobre as aplicações nativas da nuvem marque verdadeiro (V) ou falso (F) nas afirmativas abaixo.  (  ) Uma aplicação nativa da nuvem consiste em uma aplicação na qual utiliza recursos como serviço e é desacoplada, ou seja, na qual seus componentes não dependem de outros componentes externos, é independente.  (  ) Possui duas arquiteturas comuns e amplamente utilizadas, sendo denominadas de  ¿com estado¿ (Stateful) e  'sem estado' (Stateless).  (  ) Não devem ser considerados o ambiente no qual a aplicação será implementado.  (  ) No ambiente de nuvem, é cobrado por recursos consumidos, então como necessidade, devemos adequar nossas aplicações para consumir o mínimo de CPU e memória possível, mas ao mesmo tempo se manter estável, por isso se deve a  importância dessa arquitetura de Aplicativo Nativo da Nuvem.",
         "options": [
-            "NAT Gateway.",
-            "VPC Gateway.",
-            "Internet Gateway.",
-            "VPC Peering.",
-            "IP elástico."
+            "F; V; F; V.",
+            "V; F; V; F.",
+            "F; F; V; F.",
+            "V; V; F; V.",
+            "F; V; V; V."
         ],
         "answer": 0
     },
     {
-        "question": "Uma empresa formada majoritariamente de programadores jovens, está desenvolvendo uma aplicação em Python com características de API, com arquitetura de microsserviços. Na equipe, não há profissionais com experiência em infraestrutura de servidores ou rede, e nem desejam contratar ou treinar alguém para assumir essa responsabilidade. Que solução de computação na AWS você recomendaria para a empresa estudar a adoção?",
+        "question": "Na construção e desenvolvimento de uma aplicação, muitas vezes depende-se de comunicação entre sistemas, podendo assim, em algum momento, um desses sistemas ficar indisponível. Pensando na experiência do usuário, onde devemos evitar esperas, podemos utilizar uma estratégia de entrega de mensagens para esses casos de indisponibilidade. Qual o nome desse processo?",
         "options": [
-            "Amazon EC2.",
-            "Amazon ECS.",
-            "Amazon EKS.",
-            "AWS Lambda.",
-            "Amazon S3."
+            "Mensageria Tardia.",
+            "Mensageria Síncrona.",
+            "Mensageria Sincronizada.",
+            "Mensageria Assíncrona.",
+            "Mensageria Descentralizada."
         ],
         "answer": 3
+    },
+    {
+        "question": "A arquitetura de nuvem é um modelo de computação em que os recursos de computação, como aplicativos e armazenamento, são fornecidos através da Internet como um serviço. Escolha a alternativa que corresponda a duas arquiteturas comuns de Aplicações Nativa da Nuvem e quais as soluções que o Google fornece para cada uma delas.",
+        "options": [
+            "Na arquitetura 'com estado' (do termo em inglês, Stateful), a solução do Google Cloud é o Cloud SQL. Já na arquitetura 'sem estado' (do termo em inglês, Stateless), o Computing VM possui um PaaS chamado Cloud Run.",
+            "Na arquitetura 'com estado' (do termo em inglês, Stateful), a solução do Google Cloud é o Cloud RPKI Functions. Já na arquitetura 'sem estado' (do termo em inglês, Stateless), o Google Cloud não possui soluções adequadas para essas arquiteturas.",
+            "Arquitetura Cloud Run e arquitetura Compute Engine.",
+            "Na arquitetura 'com estado' (do termo em inglês, Stateful), a solução do Google Cloud é o Compute Engine. Já na arquitetura 'sem estado' (do termo em inglês, Stateless), o Google Cloud possui um PaaS chamado Cloud Run.",
+            "Na arquitetura 'com estado' (do termo em inglês, Stateful), a solução do Google Cloud é o Cloud Run. Já na arquitetura 'sem estado' (do termo em inglês, Stateless), o Google Cloud possui um PaaS chamado Cloud SQL."
+        ],
+        "answer": 3
+    },
+    {
+        "question": "O IAM (Gestão de acessos e identidades) é um componente extremamente importante para a segurança em nuvem. Qual é sua principal função?",
+        "options": [
+            "É um processo de identidade onde todos os usuários possuem o mesmo nível de acesso.",
+            "É um processo que visa a igualdade e compartilhamento de responsabilidades no ambiente.",
+            "É uma tecnologia de ajuda na criação de telas de login.",
+            "É o gerenciamento de usuários e senhas.",
+            "É um processo que visa controlar o acesso às informações e ações com base no nível de acesso do usuário."
+        ],
+        "answer": 4
+    },
+    {
+        "question": "Acabou de surgir uma nova versão da tecnologia de código livre na qual você trabalha e tem implementado em um sistema, como você deverá proceder com a atualização?",
+        "options": [
+            "Atualizar imediatamente.",
+            "Verificar qual a versão estável da tecnologia.",
+            "Apenas ignorar e manter a versão atual.",
+            "Atualizar após uma semana de lançamento.",
+            "Nunca alterar de versão."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "O VPC é uma boa opção para empresas que precisam manter a segurança e privacidade de seus dados, além de garantir que apenas usuários autorizados tenham acesso às suas aplicações e recursos na nuvem. É possível configurar VPCs no Azure, AWS, Google Cloud entre outros provedores de nuvem. Sobre a VPC, classifique como verdadeiro ou falso as afirmativas abaixo: (  )  Para toda infraestrutura alocada em Google Cloud, não é necessário ter uma rede configurada. (  )  Uma VPC é um modo de rede seguro, individual e privado, hospedado em Google Cloud, e através dela os usuários podem rodar códigos, armazenar dados e hospedar sites. (  )  A VPC do Google Cloud é global, isso significa que ao criá-la, podemos ser atendidos em qualquer região disponível. (  )  Dentro das redes privadas virtuais, é configurada as sub-redes, conhecidas como subnets, as quais podem estar alocadas em qualquer região que seja necessário, e com isso, todas as políticas e regras podem ser feitas regionalmente. Assinale a alternativa que apresenta a sequência correta de cima para baixo.",
+        "options": [
+            "F; V; F; V.",
+            "V; F; V; F.",
+            "F; F; V; F.",
+            "V; V; F; V.",
+            "F; V; V; V."
+        ],
+        "answer": 0
     }
 ]
