@@ -108,5 +108,16 @@
             "F; V; V; V."
         ],
         "answer": 4
+    },
+    {
+        "question": "Como é realizada a comunicação entre os diversos data centers do Google que estão espalhados ao redor do mundo?",
+        "options": [
+            "A comunicação entre os data centers é dada por meio de Via Satélite.",
+            "Diferente de outros provedores de nuvem, o Google não possui rede própria de cabos de rede interligando todas as regiões.",
+            "O Google utiliza apenas infraestruturas e cabos compartilhados com outras nuvens para comunicação entre seus data centers.",
+            "O Google possui uma rede própria de microondas que se comunica atravez de repetidores localizados em pontos estratégicos nos oceanos.",
+            "Diferente de outros provedores de nuvem, o Google possui rede própria de cabos submarinos interligando todas as regiões."
+        ],
+        "answer": 4
     }
 ]
