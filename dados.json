@@ -29,7 +29,7 @@
       "Grafos são estruturas de dados em que cada nó possui um valor e um conjunto de relações unidirecionais com os demais nós.",
       "Listas duplamente ligadas são estruturas em que cada nó possui uma referência tanto ao nó que o antecede quanto ao nó que o sucede. Além disso, o último nó da lista também possui uma referência para o primeiro nó da lista."
     ],
-    "answer": 4
+    "answer": 0
   },
   {
     "question": "Para liberar um bloco de memória previamente alocado, por meio de um único parâmetro de entrada, faz-se uso de qual função?",
