@@ -74,5 +74,16 @@
       "Lista ligada de structs."
     ],
     "answer": 1
+  },
+  {
+"question": "Sobre estruturas de dados, assinale a alternativa CORRETA.",
+"options": [
+"Pilhas são tipos de dados abstratos caracterizadas pela política 'primeiro a entrar, último a sair'.",
+"Filas são comumente implementadas sobre arrays ou grafos.",
+"Árvores de busca binárias são estruturas nas quais nós filhos possuem valores numericamente inferiores aos dos nós pais.",
+"Grafos são estruturas de dados em que cada nó possui um valor e um conjunto de relações unidirecionais com os demais nós.",
+"Listas duplamente ligadas são estruturas em que cada nó possui uma referência tanto ao nó que o antecede quanto ao nó que o sucede. Além disso, o último nó da lista também possui uma referência para o primeiro nó da lista."
+],
+"answer": 0
   }
 ]
