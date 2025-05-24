@@ -1,123 +1,78 @@
 [
-    {
-        "question": "No contexto do Google, de quem é a responsabilidade do gerenciamento da VM?",
-        "options": [
-            "A responsabilidade é mista. A infraestrutura física (hardware) é gerenciada e suportada pelo Google, e o gerenciamento de utilização de recursos, instalação e atualizações de software, é responsabilidade do usuário.",
-            "É apenas responsabilidade do Google fazer o gerenciamento de utilização dos recursos, instalação e atualizações de softwares.",
-            "Toda infraestrutura física é provida e gerenciada somente pelo usuário.",
-            "O usuário é responsável pela segurança da infraestrutura física (hardware) e a aplicação é de responsabilidade mista entre Google e usuário.",
-            "A responsabilidade de gerenciamento da VM é mista. Toda infraestrutura física é provida e gerenciada pelo usuário, mas o gerenciamento de utilização dos recursos, instalação e atualizações de softwares é de responsabilidade única do Google."
-        ],
-        "answer": 0
-    },
-    {
-        "question": "A segurança é um aspecto fundamental nas aplicações. Qual o nome da solução do Google que inibe acessos de bots a sistemas utilizando identificações visuais ou auditivas?",
-        "options": [
-            "reCAPTCHA.",
-            "Cloud Security.",
-            "Bot Detector.",
-            "Google Cloud Bot Identity.",
-            "Google reBOT."
-        ],
-        "answer": 0
-    },
-    {
-        "question": "Um usuário sofreu um ataque devido a uma biblioteca customizada desatualizada em sua aplicação. Esse usuário utilizava uma plataforma IaaS no Google Cloud. De quem é a principal responsabilidade sobre a aplicação neste caso?",
-        "options": [
-            "Do Google, responsável pela IaaS.",
-            "Mista, do Google e do Usuário que compartilham a responsabilidade sobre a aplicação.",
-            "Do usuário, pois em uma IaaS ele é responsável pela aplicação.",
-            "Parcialmente do usuário.",
-            "De ninguém."
-        ],
-        "answer": 2
-    },
-    {
-        "question": "Com a chegada da computação em nuvem, surgiram soluções como serviço, como a infraestrutura como serviço (Infrastructure as a Service em inglês, chamada de IaaS) e a plataforma como serviço (Platform as a Service em inglês, chamada de PaaS). Nesse sentido, classifique como verdadeiro ou falso as afirmativas abaixo: ( ) Enquanto na IaaS ainda existe uma responsabilidade do ponto de vista de sistema operacional e dados, por exemplo, na PaaS isso é desnecessário, visto que tudo isso é provido sob demanda. ( ) A IaaS é o modelo que oferece infraestrutura sob demanda, como recursos computacionais, armazenamento, rede e virtualização. Esse modelo ajuda a eliminar grande parte da complexidade e custos associados à criação e manutenção de infraestrutura física de um data center. ( ) Utilizando IaaS do Google Cloud, o cliente não tem a responsabilidade de gerenciar a camada de sistema operacional, dados e aplicação. ( ) A PaaS (plataforma como serviço) é um modelo que engloba a IaaS, porém com uma camada de abstração maior, tirando toda responsabilidade do ponto de vista de operações e infraestrutura, ou seja, o usuário não precisa se preocupar com nada além da sua aplicação. Assinale a alternativa que apresenta a sequência correta de cima para baixo.",
-        "options": [
-            "F; V; F; V.",
-            "V; V; V; F.",
-            "F; F; V; F.",
-            "V; V; F; V.",
-            "F; V; V; F."
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Sobre as aplicações nativas da nuvem marque verdadeiro (V) ou falso (F) nas afirmativas abaixo.  (  ) Uma aplicação nativa da nuvem consiste em uma aplicação na qual utiliza recursos como serviço e é desacoplada, ou seja, na qual seus componentes não dependem de outros componentes externos, é independente.  (  ) Possui duas arquiteturas comuns e amplamente utilizadas, sendo denominadas de  ¿com estado¿ (Stateful) e  'sem estado' (Stateless).  (  ) Não devem ser considerados o ambiente no qual a aplicação será implementado.  (  ) No ambiente de nuvem, é cobrado por recursos consumidos, então como necessidade, devemos adequar nossas aplicações para consumir o mínimo de CPU e memória possível, mas ao mesmo tempo se manter estável, por isso se deve a  importância dessa arquitetura de Aplicativo Nativo da Nuvem.",
-        "options": [
-            "F; V; F; V.",
-            "V; F; V; F.",
-            "F; F; V; F.",
-            "V; V; F; V.",
-            "F; V; V; V."
-        ],
-        "answer": 3
-    },
-    {
-        "question": "Na construção e desenvolvimento de uma aplicação, muitas vezes depende-se de comunicação entre sistemas, podendo assim, em algum momento, um desses sistemas ficar indisponível. Pensando na experiência do usuário, onde devemos evitar esperas, podemos utilizar uma estratégia de entrega de mensagens para esses casos de indisponibilidade. Qual o nome desse processo?",
-        "options": [
-            "Mensageria Tardia.",
-            "Mensageria Síncrona.",
-            "Mensageria Sincronizada.",
-            "Mensageria Assíncrona.",
-            "Mensageria Descentralizada."
-        ],
-        "answer": 3
-    },
-    {
-        "question": "A arquitetura de nuvem é um modelo de computação em que os recursos de computação, como aplicativos e armazenamento, são fornecidos através da Internet como um serviço. Escolha a alternativa que corresponda a duas arquiteturas comuns de Aplicações Nativa da Nuvem e quais as soluções que o Google fornece para cada uma delas.",
-        "options": [
-            "Na arquitetura 'com estado' (do termo em inglês, Stateful), a solução do Google Cloud é o Cloud SQL. Já na arquitetura 'sem estado' (do termo em inglês, Stateless), o Computing VM possui um PaaS chamado Cloud Run.",
-            "Na arquitetura 'com estado' (do termo em inglês, Stateful), a solução do Google Cloud é o Cloud RPKI Functions. Já na arquitetura 'sem estado' (do termo em inglês, Stateless), o Google Cloud não possui soluções adequadas para essas arquiteturas.",
-            "Arquitetura Cloud Run e arquitetura Compute Engine.",
-            "Na arquitetura 'com estado' (do termo em inglês, Stateful), a solução do Google Cloud é o Compute Engine. Já na arquitetura 'sem estado' (do termo em inglês, Stateless), o Google Cloud possui um PaaS chamado Cloud Run.",
-            "Na arquitetura 'com estado' (do termo em inglês, Stateful), a solução do Google Cloud é o Cloud Run. Já na arquitetura 'sem estado' (do termo em inglês, Stateless), o Google Cloud possui um PaaS chamado Cloud SQL."
-        ],
-        "answer": 3
-    },
-    {
-        "question": "O IAM (Gestão de acessos e identidades) é um componente extremamente importante para a segurança em nuvem. Qual é sua principal função?",
-        "options": [
-            "É um processo de identidade onde todos os usuários possuem o mesmo nível de acesso.",
-            "É um processo que visa a igualdade e compartilhamento de responsabilidades no ambiente.",
-            "É uma tecnologia de ajuda na criação de telas de login.",
-            "É o gerenciamento de usuários e senhas.",
-            "É um processo que visa controlar o acesso às informações e ações com base no nível de acesso do usuário."
-        ],
-        "answer": 4
-    },
-    {
-        "question": "Acabou de surgir uma nova versão da tecnologia de código livre na qual você trabalha e tem implementado em um sistema, como você deverá proceder com a atualização?",
-        "options": [
-            "Atualizar imediatamente.",
-            "Verificar qual a versão estável da tecnologia.",
-            "Apenas ignorar e manter a versão atual.",
-            "Atualizar após uma semana de lançamento.",
-            "Nunca alterar de versão."
-        ],
-        "answer": 1
-    },
-    {
-        "question": "O VPC é uma boa opção para empresas que precisam manter a segurança e privacidade de seus dados, além de garantir que apenas usuários autorizados tenham acesso às suas aplicações e recursos na nuvem. É possível configurar VPCs no Azure, AWS, Google Cloud entre outros provedores de nuvem. Sobre a VPC, classifique como verdadeiro ou falso as afirmativas abaixo: (  )  Para toda infraestrutura alocada em Google Cloud, não é necessário ter uma rede configurada. (  )  Uma VPC é um modo de rede seguro, individual e privado, hospedado em Google Cloud, e através dela os usuários podem rodar códigos, armazenar dados e hospedar sites. (  )  A VPC do Google Cloud é global, isso significa que ao criá-la, podemos ser atendidos em qualquer região disponível. (  )  Dentro das redes privadas virtuais, é configurada as sub-redes, conhecidas como subnets, as quais podem estar alocadas em qualquer região que seja necessário, e com isso, todas as políticas e regras podem ser feitas regionalmente. Assinale a alternativa que apresenta a sequência correta de cima para baixo.",
-        "options": [
-            "F; V; F; V.",
-            "V; F; V; F.",
-            "F; F; V; F.",
-            "V; V; F; V.",
-            "F; V; V; V."
-        ],
-        "answer": 4
-    },
-    {
-        "question": "Como é realizada a comunicação entre os diversos data centers do Google que estão espalhados ao redor do mundo?",
-        "options": [
-            "A comunicação entre os data centers é dada por meio de Via Satélite.",
-            "Diferente de outros provedores de nuvem, o Google não possui rede própria de cabos de rede interligando todas as regiões.",
-            "O Google utiliza apenas infraestruturas e cabos compartilhados com outras nuvens para comunicação entre seus data centers.",
-            "O Google possui uma rede própria de microondas que se comunica atravez de repetidores localizados em pontos estratégicos nos oceanos.",
-            "Diferente de outros provedores de nuvem, o Google possui rede própria de cabos submarinos interligando todas as regiões."
-        ],
-        "answer": 4
-    }
+  {
+    "question": "Qual estrutura de dados em C é mais apropriada para armazenar os detalhes de cada livro no projeto descrito?",
+    "options": [
+      "Array de inteiros.",
+      "Lista ligada de caracteres.",
+      "Estrutura (struct).",
+      "Ponteiro para void."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Assinale a alternativa correta sobre a saída (output) obtida, ao se executar o programa:",
+    "options": [
+      "8 8",
+      "10 8",
+      "8 10",
+      "10 10",
+      "9 10"
+    ],
+    "answer": 0
+  },
+  {
+    "question": "Sobre estruturas de dados, assinale a alternativa CORRETA.",
+    "options": [
+      "Pilhas são tipos de dados abstratos caracterizadas pela política \"primeiro a entrar, último a sair\".",
+      "Filas são comumente implementadas sobre arrays ou grafos.",
+      "Árvores de busca binárias são estruturas nas quais nós filhos possuem valores numericamente inferiores aos dos nós pais.",
+      "Grafos são estruturas de dados em que cada nó possui um valor e um conjunto de relações unidirecionais com os demais nós.",
+      "Listas duplamente ligadas são estruturas em que cada nó possui uma referência tanto ao nó que o antecede quanto ao nó que o sucede. Além disso, o último nó da lista também possui uma referência para o primeiro nó da lista."
+    ],
+    "answer": 4
+  },
+  {
+    "question": "Para liberar um bloco de memória previamente alocado, por meio de um único parâmetro de entrada, faz-se uso de qual função?",
+    "options": [
+      "Malloc",
+      "Calloc",
+      "Realloc",
+      "Free",
+      "Clear"
+    ],
+    "answer": 3
+  },
+  {
+    "question": "Como se deve acessar os membros de uma estrutura em C para realizar atualizações?",
+    "options": [
+      "Operador de desreferência.",
+      "Operador ponto (.).",
+      "Operador seta (->).",
+      "Indexação de array.",
+      "Chamada de função."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Como é o funcionamento em uma FIFO?",
+    "options": [
+      "O primeiro objeto inserido na fila é o último a ser removido.",
+      "O primeiro objeto inserido na fila é também o primeiro a ser removido.",
+      "O último objeto inserido na fila é o primeiro a ser removido.",
+      "O programador irá definir a ordem de entrada e de saída dos objetos em uma FIFO.",
+      "Uma FIFO e uma LIFO possuem as mesmas características de entrada e de saída dos objetos."
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Qual tipo de dado em C é mais adequado para representar as posições tridimensionais dos personagens?",
+    "options": [
+      "Array de caracteres.",
+      "Estrutura contendo três floats.",
+      "Ponteiro para inteiro.",
+      "Variável do tipo double.",
+      "Lista ligada de structs."
+    ],
+    "answer": 1
+  }
 ]
