@@ -1,78 +1,112 @@
 [
-  {
-    "question": "Qual estrutura de dados em C é mais apropriada para armazenar os detalhes de cada livro no projeto descrito?",
-    "options": [
-      "Array de inteiros.",
-      "Lista ligada de caracteres.",
-      "Estrutura (struct).",
-      "Ponteiro para void."
-    ],
-    "answer": 2
-  },
-  {
-    "question": "Assinale a alternativa correta sobre a saída (output) obtida, ao se executar o programa:",
-    "options": [
-      "8 8",
-      "10 8",
-      "8 10",
-      "10 10",
-      "9 10"
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Sobre estruturas de dados, assinale a alternativa CORRETA.",
-    "options": [
-      "Pilhas são tipos de dados abstratos caracterizadas pela política \"primeiro a entrar, último a sair\".",
-      "Filas são comumente implementadas sobre arrays ou grafos.",
-      "Árvores de busca binárias são estruturas nas quais nós filhos possuem valores numericamente inferiores aos dos nós pais.",
-      "Grafos são estruturas de dados em que cada nó possui um valor e um conjunto de relações unidirecionais com os demais nós.",
-      "Listas duplamente ligadas são estruturas em que cada nó possui uma referência tanto ao nó que o antecede quanto ao nó que o sucede. Além disso, o último nó da lista também possui uma referência para o primeiro nó da lista."
-    ],
-    "answer": 0
-  },
-  {
-    "question": "Para liberar um bloco de memória previamente alocado, por meio de um único parâmetro de entrada, faz-se uso de qual função?",
-    "options": [
-      "Malloc",
-      "Calloc",
-      "Realloc",
-      "Free",
-      "Clear"
-    ],
-    "answer": 3
-  },
-  {
-    "question": "Como se deve acessar os membros de uma estrutura em C para realizar atualizações?",
-    "options": [
-      "Operador de desreferência.",
-      "Operador ponto (.).",
-      "Operador seta (->).",
-      "Indexação de array.",
-      "Chamada de função."
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Como é o funcionamento em uma FIFO?",
-    "options": [
-      "O primeiro objeto inserido na fila é o último a ser removido.",
-      "O primeiro objeto inserido na fila é também o primeiro a ser removido.",
-      "O último objeto inserido na fila é o primeiro a ser removido.",
-      "O programador irá definir a ordem de entrada e de saída dos objetos em uma FIFO.",
-      "Uma FIFO e uma LIFO possuem as mesmas características de entrada e de saída dos objetos."
-    ],
-    "answer": 1
-  },
-  {
-    "question": "Qual tipo de dado em C é mais adequado para representar as posições tridimensionais dos personagens?",
-    "options": [
-      "Array de caracteres.",
-      "Estrutura contendo três floats.",
-      "Ponteiro para inteiro.",
-      "Variável do tipo double.",
-      "Lista ligada de structs."
-    ],
-    "answer": 1
-  }
+    {
+        "question": "A modularização é importante para organizar melhor o código, facilitar a manutenção, entre outras coisas. Sobre a modularização, assinale a alternativa correta.",
+        "options": [
+            "É um procedimento que sempre retorna um valor ao programa.",
+            "As variáveis definidas no escopo de cada função são acessíveis em todo o programa.",
+            "As variáveis locais são declaradas no escopo do programa inteiro.",
+            "A passagem de parâmetros para um subprograma pode ser somente por valor.",
+            "É um método que consiste em decompor um programa em uma série de subprogramas individuais."
+        ],
+        "answer": 4
+    },
+    {
+        "question": "Na linguagem C, as variáveis podem ser divididas quanto ao escopo em três tipos, sendo assim pode-se declarar as variáveis em três locais distintos. Sobre a relação do escopo com os locais onde são declaradas as variáveis, analise as afirmativas. \nI - As variáveis globais ficam fora das sub-rotinas de um programa, por isso podem ser usadas de qualquer lugar do programa. \nII - As variáveis locais ficam dentro da sub-rotina de um programa, só tem validade dentro da sub-rotina na qual foram declaradas. \nIII - Os parâmetros formais ficam na lista de parâmetros de uma sub-rotina, tal como as variáveis locais, estas só têm validade dentro da sub-rotina na qual foram declaradas. \n\nMarque a alternativa que apresenta a(s) afirmativa(s) correta(s).",
+        "options": [
+            "As afirmativas I, II e III estão corretas.",
+            "Apenas as afirmativas I e III estão corretas.",
+            "Apenas as afirmativas I e II estão corretas.",
+            "Apenas as afirmativas II e III estão corretas.",
+            "Apenas a afirmativa I está correta."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Na linguagem C, o cabeçalho de biblioteca stdio.h possui definições de subrotinas relativas às operações de entrada/saída padrão. Uma das funções tratadas na biblioteca, associada a esse cabeçalho, é a função.",
+        "options": [
+            "Stderr.",
+            "Trunc.",
+            "Strcpy.",
+            "Locatime.",
+            "Printf."
+        ],
+        "answer": 4
+    },
+    {
+        "question": "Há duas maneiras de se passar argumentos ou parâmetros para funções: por valor e por referência. Sobre passagem de parâmetros, analise as seguintes afirmativas:\nI. Na passagem por referência, o que é passado como argumento no parâmetro formal é o endereço da variável.\nII. Na passagem por valor, o valor é copiado do argumento para o parâmetro formal da função.\nIII. Por exemplo, quando duas variáveis inteiras i1 e i2 são passadas por valor à função troca() chamada pelo programa principal, elas também são alteradas no programa principal.\nIV. Na passagem por referência, dentro da função, o argumento real utilizado na chamada é acessado através do seu endereço, sendo assim alterado.\nV. Na passagem por valor, quaisquer alterações feitas nestes parâmetros dentro da função não irão afetar as variáveis usadas como argumentos para chamá-la.\nEstá CORRETO o que se afirma em:",
+        "options": [
+            "I e III",
+            "V, apenas",
+            "I, II, IV e V, apenas",
+            "I, III e V, apenas",
+            "II e IV, apenas"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "A modulação é a divisão do programa em módulos menores. Essa divisão apresenta diversas vantagens. Sobre as vantagens da modulação, analise as afirmativas abaixo. \nI - Contribuir para fácil leitura do código-fonte do programa.\nII - Compartimentar o programa em blocos maiores (superblocos) de forma a agrupar esses blocos.\nIII - Aumentar os erros de repetição de trechos dentro do mesmo programa.\n\nMarque a alternativa que apresenta a(s) afirmativa(s) correta(s).",
+        "options": [
+            "As afirmativas I, II e III estão corretas.",
+            "Apenas as afirmativas I e III estão corretas.",
+            "Apenas as afirmativas I e II estão corretas.",
+            "Apenas as afirmativas II e III estão corretas.",
+            "Apenas a afirmativa I está correta."
+        ],
+        "answer": 4
+    },
+    {
+        "question": "Observe o trecho de código abaixo, escrito na linguagem C.\nvoid imprimecabecalho() {\n            ...\n}\nvoid calcula() {\n            int soma;\n            ...\n            imprimecabecalho();\n}\nCom base nesse código, é correto afirmar que:",
+        "options": [
+            "O escopo da variável soma é contido pela função imprimecabecalho().",
+            "O escopo e o tempo de vida da variável soma são iguais e contidos pela função imprimecabecalho().",
+            "O tempo de vida da variável soma estende-se durante o tempo em que a função imprimecabecalho() é executada.",
+            "O escopo da variável soma é dinâmico e se estende durante toda execução do programa.",
+            "O escopo da variável soma se estende da função calcula() para a função imprimecabecalho()."
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Na linguagem de programação em C, as funções permitem a criação de programas em módulos, em que todas as variáveis, que são descritas nas definições de função, são locais, pois são conhecidas apenas na função em que são definidas. Cada biblioteca‐padrão tem um cabeçalho que contém os protótipos de função para todas as funções nessa biblioteca, assim como definições de vários tipos de dados e constantes que são necessárias para estas funções. Uma dessas bibliotecas tem a seguinte explicação: contém as definições comuns de tipo usadas pela C para realizar cálculos. Assinale‐a.",
+        "options": [
+            "math.h",
+            "stddef.h",
+            "locale.h",
+            "assert.h",
+            "stdio.h"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Com relação ao código acima, analise as asserções I e II.\n\nI - A diretiva #include deve ser incluída no início do arquivo stdio.h para a execução do código em questão.\nPORQUE\nII - Na linguagem C, arquivos header com extensão \".h\" tem suas funções predefinidas nas bibliotecas da linguagem.\nMarque a alternativa que apresenta a relação correta entre as asserções I e II.",
+        "options": [
+            "Ambas as asserções são verdadeiras, e a asserção II é uma justificativa para a asserção I.",
+            "Ambas as asserções são verdadeiras, mas a asserção II não é uma justificativa para a asserção I.",
+            "A asserção I é verdadeira e a asserção II é falsa.",
+            "A asserção I é falsa e a asserção II é verdadeira.",
+            "Ambas as asserções são falsas."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Existem várias formas de se passarem parâmetros para uma sub-rotina. Na chamada por valor, é passada para a sub-rotina uma.",
+        "options": [
+            "Cópia do valor da variável, sendo possível alterar o conteúdo da variável original.",
+            "Cópia do valor da variável, não sendo possível alterar o conteúdo da variável original.",
+            "Informação de redundância a respeito das variáveis passadas, visando à confiabilidade do processo.",
+            "Referência para a variável, sendo possível alterar o conteúdo da variável original.",
+            "Referência para a variável, não sendo possível alterar o conteúdo da variável original."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Essas variáveis que são declaradas fora da sub-rotina, podendo ser acessíveis em todos os escopos, em qualquer lugar de um programa, disponíveis durante toda a execução do programa. Marque a alternativa que apresenta o tipo de variável descrito acima.",
+        "options": [
+            "Global.",
+            "Local.",
+            "Única.",
+            "Formais.",
+            "Paramétricas."
+        ],
+        "answer": 0
+    }
 ]
