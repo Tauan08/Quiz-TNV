@@ -1,5 +1,82 @@
 [
     {
+        "question": "Em um projeto de software para gerenciamento de bibliotecas, utiliza-se a estrutura de dados heterogênea para modelar livros. Cada livro é representado por uma estrutura contendo título, autor, ano de publicação e status de empréstimo. Qual estrutura de dados em C é mais apropriada para armazenar os detalhes de cada livro no projeto descrito?",
+        "options": [
+            "Array de inteiros.",
+            "Lista ligada de caracteres.",
+            "Estrutura (struct).",
+            "Ponteiro para void.",
+            "Matriz bidimensional de floats."
+        ],
+        "answer": 2
+    },
+    {
+        "question": "A sigla FIFO refere-se a estruturas de dados do tipo fila. Como é o funcionamento em uma FIFO?",
+        "options": [
+            "O primeiro objeto inserido na fila é o último a ser removido.",
+            "O primeiro objeto inserido na fila é também o primeiro a ser removido.",
+            "O último objeto inserido na fila é o primeiro a ser removido.",
+            "O programador irá definir a ordem de entrada e de saída dos objetos em uma FIFO.",
+            "Uma FIFO e uma LIFO possuem as mesmas características de entrada e de saída dos objetos."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "A linguagem C permite alocar (reservar) dinamicamente (em tempo de execução) blocos de memórias utilizando ponteiros. A esse processo dá-se o nome de alocação dinâmica, que faz uso das funções malloc, calloc, realloc e free, disponíveis na biblioteca stdlib.h. Para liberar um bloco de memória previamente alocado, por meio de um único parâmetro de entrada, faz-se uso de qual função?",
+        "options": [
+            "Malloc",
+            "Calloc",
+            "Realloc",
+            "Free",
+            "Clear"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Sobre estruturas de dados, assinale a alternativa CORRETA.",
+        "options": [
+            "Pilhas são tipos de dados abstratos caracterizadas pela política \"primeiro a entrar, último a sair\".",
+            "Filas são comumente implementadas sobre arrays ou grafos.",
+            "Árvores de busca binárias são estruturas nas quais nós filhos possuem valores numericamente inferiores aos dos nós pais.",
+            "Grafos são estruturas de dados em que cada nó possui um valor e um conjunto de relações unidirecionais com os demais nós.",
+            "Listas duplamente ligadas são estruturas em que cada nó possui uma referência tanto ao nó que o antecede quanto ao nó que o sucede. Além disso, o último nó da lista também possui uma referência para o primeiro nó da lista."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Para melhorar a performance de um jogo, os desenvolvedores precisam armazenar e manipular eficientemente as posições dos personagens em um mundo virtual tridimensional. Qual tipo de dado em C é mais adequado para representar as posições tridimensionais dos personagens?",
+        "options": [
+            "Array de caracteres.",
+            "Estrutura contendo três floats.",
+            "Ponteiro para inteiro.",
+            "Variável do tipo double.",
+            "Lista ligada de structs."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Considere o programa a seguir, elaborado na linguagem ANSI C:\n#include < stdio.h >\nint* pa, a;\nint main() {\n    a = 10;\n    pa = &a;\n    a = 8;\n    printf(\"%d\", a);\n    printf(\" %d\", *pa);\n}\nAssinale a alternativa correta sobre a saída (output) obtida, ao se executar o programa:",
+        "options": [
+            "8 8",
+            "10 8",
+            "8 10",
+            "10 10",
+            "9 10"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Em um sistema de gerenciamento de estoque, utiliza-se uma estrutura para armazenar informações dos produtos, como código, descrição, quantidade e preço. É necessário acessar rapidamente essas informações para atualizações frequentes. Como se deve acessar os membros de uma estrutura em C para realizar atualizações?",
+        "options": [
+            "Operador de desreferência.",
+            "Operador ponto (.).",
+            "Operador seta (->).",
+            "Indexação de array.",
+            "Chamada de função."
+        ],
+        "answer": 1
+    },
+    {
         "question": "A modularização é importante para organizar melhor o código, facilitar a manutenção, entre outras coisas. Sobre a modularização, assinale a alternativa correta.",
         "options": [
             "É um procedimento que sempre retorna um valor ao programa.",
@@ -11,7 +88,51 @@
         "answer": 4
     },
     {
-        "question": "Na linguagem C, as variáveis podem ser divididas quanto ao escopo em três tipos, sendo assim pode-se declarar as variáveis em três locais distintos. Sobre a relação do escopo com os locais onde são declaradas as variáveis, analise as afirmativas. \nI - As variáveis globais ficam fora das sub-rotinas de um programa, por isso podem ser usadas de qualquer lugar do programa. \nII - As variáveis locais ficam dentro da sub-rotina de um programa, só tem validade dentro da sub-rotina na qual foram declaradas. \nIII - Os parâmetros formais ficam na lista de parâmetros de uma sub-rotina, tal como as variáveis locais, estas só têm validade dentro da sub-rotina na qual foram declaradas. \n\nMarque a alternativa que apresenta a(s) afirmativa(s) correta(s).",
+        "question": "A modulação é a divisão do programa em módulos menores. Essa divisão apresenta diversas vantagens. Sobre as vantagens da modulação, analise as afirmativas abaixo.",
+        "options": [
+            "As afirmativas I, II e III estão corretas.",
+            "Apenas as afirmativas I e III estão corretas.",
+            "Apenas as afirmativas I e II estão corretas.",
+            "Apenas as afirmativas II e III estão corretas.",
+            "Apenas a afirmativa I está correta."
+        ],
+        "answer": 4
+    },
+    {
+        "question": "Com relação ao código acima, analise as asserções I e II.",
+        "options": [
+            "Ambas as asserções são verdadeiras, e a asserção II é uma justificativa para a asserção I.",
+            "Ambas as asserções são verdadeiras, mas a asserção II não é uma justificativa para a asserção I.",
+            "A asserção I é verdadeira e a asserção II é falsa.",
+            "A asserção I é falsa e a asserção II é verdadeira.",
+            "Ambas as asserções são falsas."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Considere o código a seguir escrito na linguagem C.\n#include\nInt main() {\n    printf(¿Valor total: %.1f\n¿, 9,1415169265);\n    return(0);\n}\nAssinale a alternativa que apresenta a saída correta.",
+        "options": [
+            "Valor total: 9.141517.",
+            "Valor total: 9.1.",
+            "Valor total: 9.14.",
+            "Valor total: 9.142.",
+            "Valor total: 9.141517e+00."
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Na linguagem de programação em C, as funções permitem a criação de programas em módulos, em que todas as variáveis, que são descritas nas definições de função, são locais, pois são conhecidas apenas na função em que são definidas. Cada biblioteca‐padrão tem um cabeçalho que contém os protótipos de função para todas as funções nessa biblioteca, assim como definições de vários tipos de dados e constantes que são necessárias para estas funções. Uma dessas bibliotecas tem a seguinte explicação: contém as definições comuns de tipo usadas pela C para realizar cálculos. Assinale‐a.",
+        "options": [
+            "math.h",
+            "stddef.h",
+            "locale.h",
+            "assert.h",
+            "stdio.h"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Na linguagem c, as variáveis podem ser divididas quanto ao escopo em três tipos, sendo assim pode-se declarar as variáveis em três locais distintos. Sobre a relação do escopo com os locais onde são declaradas as variáveis, analise as afirmativas.",
         "options": [
             "As afirmativas I, II e III estão corretas.",
             "Apenas as afirmativas I e III estão corretas.",
@@ -33,7 +154,7 @@
         "answer": 4
     },
     {
-        "question": "Há duas maneiras de se passar argumentos ou parâmetros para funções: por valor e por referência. Sobre passagem de parâmetros, analise as seguintes afirmativas:\nI. Na passagem por referência, o que é passado como argumento no parâmetro formal é o endereço da variável.\nII. Na passagem por valor, o valor é copiado do argumento para o parâmetro formal da função.\nIII. Por exemplo, quando duas variáveis inteiras i1 e i2 são passadas por valor à função troca() chamada pelo programa principal, elas também são alteradas no programa principal.\nIV. Na passagem por referência, dentro da função, o argumento real utilizado na chamada é acessado através do seu endereço, sendo assim alterado.\nV. Na passagem por valor, quaisquer alterações feitas nestes parâmetros dentro da função não irão afetar as variáveis usadas como argumentos para chamá-la.\nEstá CORRETO o que se afirma em:",
+        "question": "Há duas maneiras de se passar argumentos ou parâmetros para funções: por valor e por referência. Sobre passagem de parâmetros, analise as seguintes afirmativas:",
         "options": [
             "I e III",
             "V, apenas",
@@ -44,7 +165,7 @@
         "answer": 2
     },
     {
-        "question": "A modulação é a divisão do programa em módulos menores. Essa divisão apresenta diversas vantagens. Sobre as vantagens da modulação, analise as afirmativas abaixo. \nI - Contribuir para fácil leitura do código-fonte do programa.\nII - Compartimentar o programa em blocos maiores (superblocos) de forma a agrupar esses blocos.\nIII - Aumentar os erros de repetição de trechos dentro do mesmo programa.\n\nMarque a alternativa que apresenta a(s) afirmativa(s) correta(s).",
+        "question": "As sub-rotinas são procedimentos e funções da programação modularizada. Um parâmetro passado por valor para uma sub-rotina se comportará como uma variável local, isto é, qualquer modificação no valor desta variável não será visível fora da sub-rotina. Sobre a passagem de parâmetros, analise as afirmativas abaixo.",
         "options": [
             "As afirmativas I, II e III estão corretas.",
             "Apenas as afirmativas I e III estão corretas.",
@@ -55,7 +176,7 @@
         "answer": 4
     },
     {
-        "question": "Observe o trecho de código abaixo, escrito na linguagem C.\nvoid imprimecabecalho() {\n            ...\n}\nvoid calcula() {\n            int soma;\n            ...\n            imprimecabecalho();\n}\nCom base nesse código, é correto afirmar que:",
+        "question": "Observe o trecho de código abaixo, escrito na linguagem C.\nvoid imprimecabecalho() {\n    ...\n}\nvoid calcula() {\n    int soma;\n    ...\n    imprimecabecalho();\n}\nCom base nesse código, é correto afirmar que:",
         "options": [
             "O escopo da variável soma é contido pela função imprimecabecalho().",
             "O escopo e o tempo de vida da variável soma são iguais e contidos pela função imprimecabecalho().",
@@ -66,47 +187,267 @@
         "answer": 2
     },
     {
-        "question": "Na linguagem de programação em C, as funções permitem a criação de programas em módulos, em que todas as variáveis, que são descritas nas definições de função, são locais, pois são conhecidas apenas na função em que são definidas. Cada biblioteca‐padrão tem um cabeçalho que contém os protótipos de função para todas as funções nessa biblioteca, assim como definições de vários tipos de dados e constantes que são necessárias para estas funções. Uma dessas bibliotecas tem a seguinte explicação: contém as definições comuns de tipo usadas pela C para realizar cálculos. Assinale‐a.",
+        "question": "Pilhas e Filas: Características e Aplicações O acesso ao elemento de uma estrutura de dados tipo pilha se restringe ao mais recente na pilha. Já o acesso a um elemento de uma estrutura tipo fila ocorre ao dado há mais tempo na fila. Sobre pilhas e filas, avalie as assertivas a seguir:",
         "options": [
-            "math.h",
-            "stddef.h",
-            "locale.h",
-            "assert.h",
-            "stdio.h"
+            "I.",
+            "II.",
+            "I e II.",
+            "I e III.",
+            "II e III."
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Operações com Fila e Pilha Insira os dados de entrada numa fila. Em seguida, retire cada dado da fila e insira numa pilha. Mostre a pilha. Depois retire os dados da pilha e insira na fila. Mostre a fila. Dados de entrada: 11, 12, 23, 14, 25, 50, 8, 18, 29, 10 As estruturas mostradas ficam:",
+        "options": [
+            "III e IV.",
+            "II e IV.",
+            "I, II e III.",
+            "I, III e V.",
+            "I, IV e V."
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Desvantagem da Lista Ordenada Alocada Sequencialmente Uma lista ordenada alocada sequencialmente possui como desvantagem:",
+        "options": [
+            "Complexidade O(n) para a busca.",
+            "Impossibilidade de remoção no meio da lista.",
+            "Tamanho limitado de memória alocada para lista.",
+            "Impossibilidade de acesso direto.",
+            "A reserva de memória em posições contíguas."
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Estruturas de Dados FIFO e LIFO Assinale, das alternativas abaixo, a única que identifica respectivamente uma Estrutura de Dados do tipo FIFO (First In, First Out) e uma outra com a Estrutura de dados do tipo LIFO (Last In, First Out):",
+        "options": [
+            "Lista - vetor",
+            "Pilha - fila",
+            "Vetor - lista",
+            "Fila - pilha",
+            "Matriz - vetor"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Listas Duplamente Encadeadas Sobre listas duplamente encadeadas, afirma-se:",
+        "options": [
+            "I.",
+            "II.",
+            "III.",
+            "I e III.",
+            "II e III."
         ],
         "answer": 0
     },
     {
-        "question": "Com relação ao código acima, analise as asserções I e II.\n\nI - A diretiva #include deve ser incluída no início do arquivo stdio.h para a execução do código em questão.\nPORQUE\nII - Na linguagem C, arquivos header com extensão \".h\" tem suas funções predefinidas nas bibliotecas da linguagem.\nMarque a alternativa que apresenta a relação correta entre as asserções I e II.",
+        "question": "Estrutura de Dados com Deslocamento Relativo ao Primeiro (IBADE/2022) Uma estrutura de dados onde existe uma coleção ordenada de entidades sendo a metodologia de busca com base no deslocamento relativo ao primeiro (cabeça) da coleção, chama-se:",
         "options": [
-            "Ambas as asserções são verdadeiras, e a asserção II é uma justificativa para a asserção I.",
-            "Ambas as asserções são verdadeiras, mas a asserção II não é uma justificativa para a asserção I.",
-            "A asserção I é verdadeira e a asserção II é falsa.",
-            "A asserção I é falsa e a asserção II é verdadeira.",
-            "Ambas as asserções são falsas."
+            "Árvore.",
+            "Lista.",
+            "Pilha.",
+            "Fila.",
+            "Árvore binária."
         ],
         "answer": 1
     },
     {
-        "question": "Existem várias formas de se passarem parâmetros para uma sub-rotina. Na chamada por valor, é passada para a sub-rotina uma.",
+        "question": "Características de Estruturas de Dados Várias estruturas de dados podem ser utilizadas para armazenar dados de uma aplicação. Em relação ao assunto, assinale a alternativa correta.",
         "options": [
-            "Cópia do valor da variável, sendo possível alterar o conteúdo da variável original.",
-            "Cópia do valor da variável, não sendo possível alterar o conteúdo da variável original.",
-            "Informação de redundância a respeito das variáveis passadas, visando à confiabilidade do processo.",
-            "Referência para a variável, sendo possível alterar o conteúdo da variável original.",
-            "Referência para a variável, não sendo possível alterar o conteúdo da variável original."
+            "A estrutura de dados do tipo pilha sempre retira os elementos que foram inseridos primeiro na estrutura.",
+            "A estrutura de dados do tipo lista utiliza a ideia do primeiro a chegar, primeiro a ser servido para inserir elementos.",
+            "A estrutura de dados do tipo fila sempre retira os elementos que entraram por último na fila.",
+            "A estrutura de dados do tipo pilha, para retirar o elemento do topo da pilha, é necessário retirar o elemento da base da pilha.",
+            "A estrutura de dados do tipo fila utiliza a ideia do primeiro a ser inserido, será o primeiro a ser retirado."
+        ],
+        "answer": 4
+    },
+    {
+        "question": "A Complexidade Computacional é a área da Ciência da Computação que se ocupa, entre outros, do estudo e análise do custo de tempo de execução e espaço ocupado pelos algoritmos. Sobre Complexidade Computacional, marque V para as afirmações Verdadeiras, ou F para as Falsas.",
+        "options": [
+            "V V V",
+            "F F F",
+            "V V F",
+            "F V F",
+            "F F V"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Leia o seguinte trecho de código-fonte escrito em Java. O algoritmo de ordenação implementado nesse trecho de código-fonte é o",
+        "options": [
+            "Heap Sort",
+            "Bubble Sort",
+            "Quick Sort",
+            "Merge Sort",
+            "May Sort"
         ],
         "answer": 1
     },
     {
-        "question": "Essas variáveis que são declaradas fora da sub-rotina, podendo ser acessíveis em todos os escopos, em qualquer lugar de um programa, disponíveis durante toda a execução do programa. Marque a alternativa que apresenta o tipo de variável descrito acima.",
+        "question": "A Complexidade Computacional é a área da Ciência da Computação que se ocupa, entre outros, do estudo e análise do custo de tempo de execução e espaço ocupado pelos algoritmos. Sobre Complexidade Computacional, marque V para as afirmações Verdadeiras, ou F para as Falsas.",
         "options": [
-            "Global.",
-            "Local.",
-            "Única.",
-            "Formais.",
-            "Paramétricas."
+            "V V V",
+            "F F F",
+            "V V F",
+            "F V F",
+            "F F V"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Considere utilizar o algoritmo Bubble Sort para ordenar, em ordem crescente, a sequência de números 17, 43, 37, 31, 8, 77, 52, 25. Se a sequência original for a iteração zero, qual será a sequência de números da segunda iteração?",
+        "options": [
+            "17, 31, 8, 25, 37, 43, 77, 52",
+            "17, 31, 37, 43, 8, 77, 52, 55",
+            "17, 31, 8, 37, 43, 25, 52, 77",
+            "17, 25, 37, 31, 8, 43, 52, 77",
+            "8, 17, 43, 37, 31, 77, 52, 25"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Todos os algoritmos de ordenação interna devem ter complexidade de espaço de:",
+        "options": [
+            "O(n2)",
+            "O(nlogn)",
+            "O(n)",
+            "O(n3)",
+            "O(1)"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Algoritmos de ordenação são responsáveis por ordenar elementos de uma estrutura de dados de forma completa ou parcial. Sobre a complexidade dos algoritmos de ordenação, assinale, a seguir, o algoritmo de ordenação que, no pior caso, tem complexidade igual a O(nlogn).",
+        "options": [
+            "Quick sort",
+            "Merge sort",
+            "Bubble sort",
+            "Insertion sort",
+            "Selection sort"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Algoritmos de ordenação baseados em comparação entre elementos da sequência tem complexidade computacional mínima de:",
+        "options": [
+            "O(nlogn)",
+            "O(n2)",
+            "O(n)",
+            "O(logn)",
+            "O(n3)"
         ],
         "answer": 0
+    },
+    {
+        "question": "Em relação aos algoritmos de ordenação externa, é correto afirmar que:",
+        "options": [
+            "Executam em memória principal (RAM) somente.",
+            "Executam em memória secundária (Disco) somente.",
+            "Manipulam os dados na memória secundária, porém usam parcela da memória principal.",
+            "As afirmativas 2 e 3 estão corretas.",
+            "As afirmativas 1 e 3 estão corretas."
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Considere uma estrutura de dados do tipo vetor de tamanho 6 (seis) inicializado com as chaves abaixo: Analise a ilustração dos passos intermediários de um método de ordenação das chaves do vetor: O método de ordenação apresentado é:",
+        "options": [
+            "Ordenação por inserção",
+            "Ordenação por seleção",
+            "Quicksort",
+            "Shellsort",
+            "Mestrellasort"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Em relação aos algoritmos de ordenação externa, é correto afirmar que:",
+        "options": [
+            "Executam em memória principal (RAM) somente.",
+            "Executam em memória secundária (Disco) somente.",
+            "Manipulam os dados na memória secundária, porém usam parcela da memória principal.",
+            "As afirmativas 2 e 3 estão corretas.",
+            "As afirmativa 1 e 3 estão corretas."
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Seja o seguinte código em Python cujo principal objetivo é implementar uma árvore binária. Marque a alternativa correta quanto à execução do código:",
+        "options": [
+            "A árvore criada no código acima é uma árvore binária de busca com todas as folhas no último nível.",
+            "A árvore criada no código acima não é binária de busca.",
+            "A árvore criada no código é binária de busca com altura 6, isto é, com 6 níveis distintos.",
+            "Não é possível inferir a topologia da árvore com base no código.",
+            "A classe NotArvore implementa regras que garantem que os nós inseridos respeitam a ordem de inserção dos nós (maiores à direita e menores à esquerda)."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Seja a seguinte árvore binária de busca abaixo, marque a sequência correta do percurso em pós-ordem:",
+        "options": [
+            "23,24,25,26,27,29,28",
+            "25,24,27,23,26,29,30",
+            "25,24,23,27,26,28,29",
+            "23,24,26,29,28,27,25",
+            "23,24,29,26,28,25,27"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Árvore AVL é uma árvore de busca autobalanceada. Isso significa que:",
+        "options": [
+            "As alturas das duas subárvores a partir de cada nó diferem no máximo em uma unidade.",
+            "Cada nó da árvore possui até três descendentes.",
+            "As alturas das duas subárvores a partir de cada nó diferem no máximo em duas unidades.",
+            "Pode possuir até duas raízes.",
+            "As alturas das duas subárvores a partir de cada nó são exatamente iguais."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Seja a seguinte árvore, marque a opção correta que indica o porquê a árvore abaixo não é uma árvore binária de busca:",
+        "options": [
+            "Não é uma árvore binária de busca pois está desbalanceada.",
+            "Não é uma árvore binária de busca pois o nó 35 deveria estar inserido à direita do nó 20.",
+            "Não é uma árvore binária de busca pois essa árvore deve estar perfeitamente balanceada.",
+            "Não é uma árvore binária de busca pois esta árvore deve estar com os níveis de suas folhas todas igualmente perfeitas.",
+            "Não é uma árvore binária de busca pois o nó 22 deveria estar inserido à direita do nó 20."
+        ],
+        "answer": 4
+    },
+    {
+        "question": "As árvores binárias de busca são especializações das árvores binárias que permitem uma melhor organização dos algoritmos de busca. Sobre a inserção de uma nova chave em uma árvore binária de busca é correto afirmar que:",
+        "options": [
+            "Toda nova chave é inserida obrigatoriamente na raiz.",
+            "Para determinar a posição da nova chave é necessário calcular o percurso em ordem simétrica da árvore obtida. Com este percurso, verifica-se se a sequência está ordenada em ordem crescente. Caso esteja, a posição da nova chave está correta.",
+            "A complexidade da inserção é sempre O(n), independentemente da altura da árvore.",
+            "Todas as chaves são inseridas em folhas, a posição da folha é determinada pela busca.",
+            "O algoritmo de inserção em árvores binárias de busca é estático, isto é, é necessário recalcular toda árvore para inserir uma nova chave."
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Árvore de pesquisa é uma estrutura de dados eficiente para armazenar informação, sendo particularmente adequada quando existe a necessidade de considerar todos ou alguma combinação de registros. Assinale uma combinação correta desses registros.",
+        "options": [
+            "Acesso direto e sequencial eficientes, facilidade de inserção e retirada de registro, boa taxa de utilização de memória, utilização de memória primária e secundária.",
+            "Utilização de algoritmos de ordenação eficientes.",
+            "Utilização de estruturas de dados como lista, pilha e fila.",
+            "Não é necessário indexar os registros.",
+            "As operações de inserir, retirar e pesquisar são definidas."
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Existem vários tipos diferentes de árvores de busca, como árvores binárias, AVL e árvores B. Nesse sentido, marque a opção correta sobre os procedimentos de rotação em árvores AVL:",
+        "options": [
+            "Uma rotação simples à esquerda de um nó x acontece quando um desbalanceamento de x acontece à esquerda.",
+            "Uma rotação dupla à esquerda de um nó x acontece quando um desbalanceamento de x acontece à esquerda.",
+            "Uma rotação simples à esquerda de um nó x acontece quando um desbalanceamento de x acontece à direita.",
+            "Uma rotação simples à direita de um nó x acontece quando um desbalanceamento de x acontece à direita.",
+            "Uma rotação dupla à direita de um nó x acontece quando um desbalanceamento de x acontece à direita."
+        ],
+        "answer": 2
     }
 ]
